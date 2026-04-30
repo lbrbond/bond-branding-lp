@@ -1557,33 +1557,38 @@ img { max-width:100%; display:block; }
         自動返信メールにて、資料のダウンロードURLをお送りします。
       </p>
     </div>
-    <form id="reqForm" onsubmit="handleSubmit(event)">
-      <div class="f-row">
-        <label class="f-label">会社名<span class="req">必須</span></label>
-        <input type="text" class="f-input" required="" placeholder="株式会社○○○○">
-      </div>
-      <div class="f-row">
-        <label class="f-label">お名前<span class="req">必須</span></label>
-        <input type="text" class="f-input" required="" placeholder="山田 太郎">
-      </div>
-      <div class="f-row">
-        <label class="f-label">メールアドレス<span class="req">必須</span></label>
-        <input type="email" class="f-input" required="" placeholder="example@company.co.jp">
-      </div>
-      <div class="f-row">
-        <label class="f-label">電話番号<span class="req">必須</span></label>
-        <input type="tel" class="f-input" required="" placeholder="03-0000-0000">
-      </div>
-      <div class="f-row">
-        <label class="f-label">現状の課題<span class="opt">任意</span></label>
-        <textarea class="f-textarea" placeholder="例：社員の身だしなみ基準が曖昧で、統一感がない"></textarea>
-      </div>
-      <button type="submit" class="f-submit">資料を受け取る →</button>
-      <p class="f-privacy">
-        送信前に<a href="https://branding.ymdsht-520.workers.dev/#">プライバシーポリシー</a>をご確認ください。<br>
-        ご入力情報は資料送付と関連情報のご案内にのみ使用します。
-      </p>
-    </form>
+    <form id="reqForm" action="https://my156p.com/p/r/LQERlI2l" method="POST">
+  <div class="f-row">
+    <label class="f-label">会社名<span class="req">必須</span></label>
+    <input type="text" class="f-input" name="data[User][company]" required placeholder="株式会社○○○○">
+  </div>
+
+  <div class="f-row">
+    <label class="f-label">お名前<span class="req">必須</span></label>
+    <input type="text" class="f-input" name="data[User][name1]" required placeholder="山田 太郎">
+  </div>
+
+  <div class="f-row">
+    <label class="f-label">メールアドレス<span class="req">必須</span></label>
+    <input type="email" class="f-input" name="data[User][mail]" required placeholder="example@company.co.jp">
+  </div>
+
+  <div class="f-row">
+    <label class="f-label">電話番号<span class="req">必須</span></label>
+    <input type="tel" class="f-input" name="data[User][tel]" required placeholder="03-0000-0000">
+  </div>
+
+  <div class="f-row">
+    <label class="f-label">現状の課題<span class="opt">任意</span></label>
+    <textarea class="f-textarea" name="data[User][free2]" placeholder="例：社員の身だしなみ基準が曖昧で、統一感がない"></textarea>
+  </div>
+
+  <button type="submit" class="f-submit">資料を受け取る →</button>
+  <p class="f-privacy">
+    送信前に<a href="#">プライバシーポリシー</a>をご確認ください。<br>
+    ご入力情報は資料送付と関連情報のご案内にのみ使用します。
+  </p>
+</form>
     <div class="f-success" id="formSuccess">
       <div class="f-success-icon">✓</div>
       <h3 class="f-success-title">送信ありがとうございます</h3>
